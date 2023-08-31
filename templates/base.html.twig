@@ -1,16 +1,334 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="fr">
 
-        {% block javascripts %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If-web-dev</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-i1NKKi6v1SiV17z/vxtpK7eCN6p/vT4JtZKjQ8C0yAtaLhBuBXDQGxF2Sjbj7kUpF/K8CHw7lEwQVQgL2ZS1w=="
+    crossorigin="anonymous" />
+  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.ico') }}">
+</head>
+
+<body>
+  <main class="position-relative">
+    <div class="wrapper-mobile d-lg-none">
+      <ul>
+        <li><a class="mobile-menu-close" href="#skills">Compétences</a></li>
+        <li><a class="mobile-menu-close" href="#services">Services</a></li>
+        <li><a class="mobile-menu-close" href="#contact">Contact</a></li>
+        <li><a class="mobile-menu-close" href="#contact">Une idée de projet ?</a></li>
+      </ul>
+    </div>
+    <button class="menu-btn d-lg-none">
+      <i class="fas fa-bars"></i>
+    </button>
+    <header class="bg-night">
+      <div class="d-flex flex-column h-100">
+        <nav class="navbar navbar-dark navbar-expand-lg py-4">
+
+          <div class="container-lg">
+            <a class="navbar-brand logo text-light" href="#">
+              <img src="{{ asset('img/logo fire pixel.png') }}" width="190px" alt="logo">
+            </a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ms-auto text-uppercase">
+                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                  <a class="nav-link text-light" aria-current="page" href="#skills">Compétences</a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                  <a class="nav-link text-light" href="#services">Services</a>
+                </li>
+                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                  <a class="nav-link text-light" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item mx-3">
+                  <a href="#contact" class="btn hero-button my-3 red-button shadow-lg"><i
+                      class="fa-solid fa-lightbulb me-2"></i>Une idée de projet ?</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+        <div class="container d-flex justify-content-center flex-fill">
+          <div class="hero d-flex flex-wrap col-12 mb-3 align-items-center">
+            <div class="text-white d-flex flex-column col col-lg-8 col-md-12">
+              <h1 class="fw-bold my-3 text-shadow-dark">Votre <span class="highlighted">Image</span> de marque propulsée
+                !
+              </h1>
+              <p class="text-star info">Créateur de visuels, site vitrine et d'e-commerce Wordpress</p>
+              <div class="d-flex justify-content-center justify-content-lg-start ">
+                <a href="#services" class="btn hero-button my-3 red-button shadow-lg"><i
+                    class="fa-solid fa-circle-info me-2"></i>EN SAVOIR PLUS</a>
+                <a href="#contact" class="btn hero-button my-3 ms-2 ms-lg-3 light-button shadow-lg"><i
+                    class="fa-regular fa-envelope me-2"></i>ME CONTACTER ?</a>
+              </div>
+            </div>
+            <div class=" d-flex flex-column align-items-center col col-lg-4 fade-in">
+              <img class="text-center" src="{{ asset('img/hero-logo.png') }}" width="100%">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1692800020">
+        <img src="{{ asset('img/city-night.svg') }}" alt="city-nigth" loading="lazy" />
+      </div>
+    </header>
+
+    <section class="position-relative bg-black" id="skills">
+
+      <div class="container text-white text-center mb-5 ad">
+        <p class="info fs-4 mx-md-5 my-5">Vous souhaitez mettre en avant votre activité sur le web? Démarquez-vous avec
+          des créations uniques. Boostez votre visibilité dès aujourd'hui.</p>
+      </div>
+      <div class="d-flex flex-column justify-content-center container">
+        <h2 class="text-white text-uppercase ms-3 text-shadow-light">Compétences</h2>
+        <span class="divider-separator text-center mt-4 ms-3 trait-shadow-light"></span>
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+            <p class="p-2 fs-4 info d-sm-none d-lg-block me-lg-5 text-white skills-text">
+              Freelance passionné de création visuelle, je réalise des sites web en WordPress et Symfony. Mon objectif
+              est d'aider les artisans et les PME à promouvoir leur image en ligne.
+          </div>
+          <div class="col-12 col-lg-7 row skills-container skills overflow-hidden">
+            <div class="col-12 col-sm-6 d-flex fade-in pt-5">
+              <div class="card bg-night flex-fill mx-md-2 my-5 p-4">
+                <i class="fas fa-pencil-ruler"></i>
+                <h4>FrontEnd</h4>
+                <p>Maitrise des technologies HTML, CSS et JS.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex fade-in pb-5">
+              <div class="card bg-night flex-fill mx-md-2 my-5 p-4">
+                <!--<i class="fab fa-bitbucket"></i>-->
+                <img class="shadow" src="{{ asset('img/Symfony-logo.png') }}" alt="symfony-logo" loading="lazy">
+                <h4>BackEnd</h4>
+                <p>Diplômé titre RNCP (bac+3/bac+4) créateur d'application PHP/Symfony.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex fade-in">
+              <div class="card bg-night flex-fill mx-md-2 my-5 p-4">
+                <i class="fas fa-brush"></i>
+                <h4>Design</h4>
+                <p>Dispose des meilleurs outils tel que Photoshop et Canvas.</p>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 d-flex fade-in pb-5">
+              <div class="card bg-night flex-fill mx-md-2 mb-5 p-4">
+                <!--<i class="fab fa-sketch"></i>-->
+                <img src="{{ asset('img/wordpress-logo.png') }}" alt="wordpress-logo" loading="lazy">
+                <h4>Wordpress</h4>
+                <p>Créateur de Site Vitrine et E-commerce avec le célèbre CMS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-night pb-5">
+      <div class="custom-shape-divider-top-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+          loading="lazy">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+      <div class="container" id="services">
+        <div class="container text-white text-center py-5 ad slide-in from-left">
+          <p class="info fs-4">
+            Pour concevoir des visuels et des sites personnalisés répondant aux besoins de mes clients, je collabore
+            étroitement avec eux, garantissant ainsi une présence en ligne digne d'un professionnel. Profitez dès
+            maintenant de nos tarifs de lancement !</p>
+        </div>
+        <div class="d-flex flex-column justify-content-center">
+          <h2 class="text-white text-uppercase ms-3 text-shadow-dark">Services</h2>
+          <span class="divider-separator text-center
+                mt-4 ms-3 trait-shadow-dark"></span>
+        </div>
+        <div class="row justify-content-center py-4 services">
+
+          <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
+            <a href="#contact" class="text-decoration-none">
+              <div class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black rounded card flex-fill shadow">
+                <h3 class="text-center m-3 text-white fw-600">Conception Logos et visuels personnalisés</h3>
+                <p class="text-star text-center text-white"> à partir de</p>
+                <p class="text-center price">50 euros*</p>
+                <ul class="list-unstyled text-white">
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Création de logos</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Conception de flyers, affiches</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Design de cartes de visite</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Design de bannières et d'images pour les
+                    réseaux
+                    sociaux</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Design moderne et épuré</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Travail sur mesure</li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a href="#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
+            <a href="#contact" class="text-decoration-none">
+              <div
+                class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black text-white rounded card flex-fill d-flex flex-column shadow">
+                <h3 class="text-center my-3 text-white fw-600">Site Vitrine Wordpress ou Symfony</h3>
+                <p class="text-star text-center text-white"> à partir de</p>
+                <p class="text-center price">500 euros*</p>
+                <ul class="list-unstyled text-white">
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Design moderne</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Site Responsive</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> 1 à 5 pages</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Formulaire de contact</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Optimisation SEO</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Hébergement O2switch</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Optimisation vitesse et performance</li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a href="#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
+            <a href="#contact" class="text-decoration-none">
+              <div
+                class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black text-white rounded card flex-fill d-flex flex-column shadow">
+                <h3 class="text-center my-3 text-white fw-600">Création Site e-commerce Wordpress</h3>
+                <p class="text-star text-center text-white"> à partir de</p>
+                <p class="text-center price">900 euros*</p>
+                <ul class="list-unstyled text-white">
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Design moderne</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Site Responsive</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Intégration jusqu'à 20 produits</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Formulaire de contact</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Optimisation SEO</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Hébergement O2switch</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Optimisation vitesse et performance</li>
+                  <li class="text-center"><i class="fas fa-check pe-2"></i> Boutique Woocommerce</li>
+                </ul>
+                <div class="d-flex justify-content-center">
+                  <a href="#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="container text-white text-center py-5 slide-in from-right">
+          <p class="info fst-italic">(*) Les Tarifs affichés sont à titre indicatifs, un devis devra être réalisé.
+            Plusieurs fois sans frais possible.</p>
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+
+    <section class="bg-black" id="contact">
+      <div class="d-flex flex-column container">
+        <h2 class="text-white mt-5 text-uppercase ms-3 text-shadow-light">Contact</h2>
+        <span class="divider-separator text-center mt-4 ms-3 trait-shadow-light"></span>
+      </div>
+      <div class="container text-white justify-content-center">
+        <div class="row">
+          <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center slide-in from-left">
+            <!--<video class="absolute w-100 h-100 top-0 left-0" muted="">
+                <source src="https://meltwater-site.cdn.prismic.io/meltwater-site/9923896e-be13-4548-8e32-c5cf50d0e015_CTA-SolidGrey-reencoded.mp4" type="video/mp4">
+              </video>-->
+            <img class="w-75" src="{{ asset('img/laptop_form_2.png') }}" loading="lazy" alt="laptop">
+          </div>
+          <div class="col-12 col-lg-6 py-5 px-3 fade-in">
+            {% for message in app.flashes('success') %}
+
+            <div class="alert alert-success alert-dismissible fade show my-4">
+              {{ message }}
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            {% endfor %}
+            <h3 class="my-4 text-shadow-light fw-600">Améliorez votre image !</h3>
+
+            {{ form_start(form, {'action': '/#contact', 'method': 'POST'}) }}
+
+            {{ form_widget(form) }}
+
+            <button type="submit" class="btn hero-button red-button shadow-lg"><i
+                class="fa-solid fa-paper-plane me-2"></i>Envoyer
+            </button>
+
+            {{ form_end(form) }}
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  <!-- Footer-->
+  <footer class="footer text-center bg-night pt-5">
+    <div class="custom-shape-divider-top-1">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
+        loading="lazy">
+        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+      </svg>
+    </div>
+    <div class="container p-5">
+      <div class="row text-white">
+        <!-- Footer Location-->
+        <div class="col-lg-4 mb-5 mb-lg-0 py-3">
+          <h4 class="text-uppercase mb-4 text-shadow-dark">PLAN DU SITE</h4>
+          <ul class="lead mb-0 list-unstyled">
+            <li>
+              <a href="#skills" class="text-white text-decoration-none">Compétences</a>
+            </li>
+            <li>
+              <a href="#services" class="text-white text-decoration-none">Services</a>
+            </li>
+            <li>
+              <a href="#contact" class="text-white text-decoration-none">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Footer Social Icons-->
+        <div class="col-lg-4 mb-5 mb-lg-0 py-3">
+          <h4 class="text-uppercase mb-4 text-shadow-dark">Autour du web</h4>
+          <a class="btn btn-outline-light btn-social rounded-circle mx-1" href="mailto:ifwebdev@hotmail.com"><i
+              class="fa-solid fa-envelope"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/IfWebDev" target="_blank"><i
+              class="fab fa-fw fa-facebook"></i></a>
+          <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/+213542341497?text=urlencodedtext"
+            target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
+        </div>
+        <!-- Footer About Text-->
+        <div class="col-lg-4 py-3">
+          <h4 class="text-uppercase mb-4 text-shadow-dark">à propos</h4>
+          <p class="mb0 lead">J'aide les artisans, PME et industriels à concevoir des designs percutants. Démarquez-vous
+            en collaborant avec un professionnel indépendant passionné du design et du web.</p>
+        </div>
+      </div>
+      <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; If-Web-Dev 2023</small></div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a88ec3c01d.js" crossorigin="anonymous"></script>
+  <script src="{{ asset('js/fadeInScroll.js') }}"></script>
+  <script src="{{ asset('js/mobileNav.js') }}"></script>
+</body>
+
 </html>
