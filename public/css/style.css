@@ -4,15 +4,15 @@
   box-sizing: border-box;
 }
 
-/*@font-face {
-    font-family: 'GT Walsheim Pro';
-    src: local('fonts/GT Walsheim Pro Regular'),
-      url('fonts/GTWalsheimPro-Regular.woff2') format('woff2');
-      /*url('fonts/GTWalsheimPro-Regular.woff') format('woff'),*/
-/*url('fonts/GTWalsheimPro-Regular.ttf') format('truetype');*/
-/*font-weight: 400;
-    font-style: normal;
-  }*/
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: local('GT Walsheim Pro Regular'), local('GT-Walsheim-Pro-Regular'),
+    url('../fonts/GTWalsheimPro-Regular.woff2') format('woff2'),
+    url('../fonts/GTWalsheimPro-Regular.woff') format('woff'),
+    url('../fonts/GTWalsheimPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
 
 :root {
   --main-color: #00cfe8;
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'GT Walsheim Pro', sans-serif;
 }
 
 .fade-in {
@@ -72,7 +72,7 @@ header {
 }
 
 nav {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   font-weight: 600;
   font-size: 15px;
 }
@@ -519,7 +519,7 @@ h2 {
 }
 
 .info {
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
   opacity: 0.6;
   font-weight: 600;
   font-size: 20px;

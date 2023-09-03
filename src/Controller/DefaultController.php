@@ -46,7 +46,7 @@ class DefaultController extends AbstractController
             return $this->redirectToRoute('app_default');
         }
 
-        return $this->render('default/index.html.twig', [
+        return $this->render('base.html.twig', [
             'form' => $form->createView(),
         ]);
     }
