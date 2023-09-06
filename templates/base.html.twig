@@ -269,9 +269,9 @@
             </div>
 
             {% endfor %}
-            <h3 class="my-4 text-shadow-light fw-600">Améliorez votre image !</h3>
+            <h3 class="my-4 text-shadow-light fw-600 mx-3">Améliorez votre image !</h3>
 
-            {{ form_start(form, {'action': '/#contact', 'method': 'POST'}) }}
+            {{ form_start(form, {'action': '/#contact', 'method': 'POST', 'attr': {'class': 'mx-3'}}) }}
 
             {{ form_widget(form) }}
 
