@@ -26,6 +26,9 @@
 
 body {
   font-family: 'GT Walsheim Pro', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .fade-in {
@@ -631,6 +634,14 @@ footer h4 {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+}
+
+/*------ error page ------*/
+
+#main-content {
+  /*z-index: revert!important;*/
+  position: relative;
+  z-index: 7000;
 }
 
 /*------ media queries ------*/
