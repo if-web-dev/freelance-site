@@ -2,137 +2,145 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equivv="X-UA-Compatible" content="ie=edge">
-  <meta property="og:image" content="https://if-web-dev.com/img/hero-logo.png">
-  <meta name="description"
-    content="If-Web-Dev : Freelance en conception de sites WordPress, Symfony, design de visuel et logo. Maximisez votre visibilité en ligne avec nos solutions sur mesure.">
-  <meta property="og:site_name" content="If-web-dev" />
-  <meta property="og:url" content="https://www.if-web-dev.com" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="If-web-dev" />
-  <meta property="og:image" content="https://www.if-web-dev.com/img/hero-logo.png" />
-  <meta property="og:description"
-    content="Vous souhaitez mettre en avant votre activité sur le web? Démarquez-vous avec des créations uniques. Boostez votre visibilité dès aujourd'hui." />
-  <link rel="icon" href="images/Logo.png">
-  <title>If-web-dev</title>
-  <link rel="preload" href="../fonts/GTWalsheimPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-i1NKKi6v1SiV17z/vxtpK7eCN6p/vT4JtZKjQ8C0yAtaLhBuBXDQGxF2Sjbj7kUpF/K8CHw7lEwQVQgL2ZS1w=="
-    crossorigin="anonymous" />
-  <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}" alt="favicon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equivv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:image" content="https://if-web-dev.com/img/hero-logo.png">
+    <meta name="description"
+        content="If-Web-Dev : Freelance en conception de sites WordPress, Symfony, design de visuel et logo. Maximisez votre visibilité en ligne avec nos solutions sur mesure.">
+    <meta property="og:site_name" content="If-web-dev" />
+    <meta property="og:url" content="https://www.if-web-dev.com" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="If-web-dev" />
+    <meta property="og:image" content="https://www.if-web-dev.com/img/hero-logo.png" />
+    <meta property="og:description"
+        content="Vous souhaitez mettre en avant votre activité sur le web? Démarquez-vous avec des créations uniques. Boostez votre visibilité dès aujourd'hui." />
+    <link rel="icon" href="images/Logo.png">
+    <title>If-web-dev</title>
+    <link rel="preload" href="../fonts/GTWalsheimPro-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-i1NKKi6v1SiV17z/vxtpK7eCN6p/vT4JtZKjQ8C0yAtaLhBuBXDQGxF2Sjbj7kUpF/K8CHw7lEwQVQgL2ZS1w=="
+        crossorigin="anonymous" />
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}" alt="favicon">
 </head>
 
 <body class="h-100">
-  <main class="position-relative">
-    <div class="wrapper-mobile d-lg-none">
-      <ul>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "skills"}) }}">Compétences</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "services"}) }}">Services</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "contact"}) }}">Contact</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "contact"}) }}">Une idée de projet ?</a></li>
-      </ul>
-    </div>
-    <button class="menu-btn d-lg-none">
-      <i class="fas fa-bars"></i>
-    </button>
-    <header class="bg-night">
-      <div class="d-flex flex-column h-100">
-        <nav class="navbar navbar-dark navbar-expand-lg py-4">
-          <div class="container-lg">
-            <a class="navbar-brand logo text-light" href="{{ path( "app_default" ) }}">
-              <img src="{{ asset('img/logo fire pixel.png') }}" width="190px" alt="logo">
-            </a>
-            <div class="collapse navbar-collapse">
-              <ul class="navbar-nav ms-auto text-uppercase">
-                <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" aria-current="page" href="{{ path( "app_default", { "id": "skills"}) }}">Compétences</a>
-                </li>
-                <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" href="{{ path( "app_default", { "id": "services"}) }}">Services</a>
-                </li>
-                <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" href="{{ path( "app_default", { "id": "contact"}) }}">Contact</a>
-                </li>
-                <li class="nav-item mx-3">
-                  <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 red-button shadow-lg"><i
-                      class="fa-solid fa-lightbulb me-2"></i>Une idée de projet ?</a>
-                </li>
-              </ul>
-            </div>
+    <main class="position-relative">
+        <div class="wrapper-mobile d-lg-none">
+            <ul>
+                <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#skills">Compétences</a></li>
+                <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#services">Services</a></li>
+                <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#contact">Contact</a></li>
+                <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#contact">Une idée de projet ?</a></li>
+            </ul>
+        </div>
+        <button class="menu-btn d-lg-none">
+            <i class="fas fa-bars"></i>
+        </button>
+        <header class="bg-night">
+            <div class="d-flex flex-column h-100">
+                <nav class="navbar navbar-dark navbar-expand-lg py-4">
+                    <div class="container-lg">
+                        <a class="navbar-brand logo text-light" href="{{ path( " app_default" ) }}">
+                            <img src="{{ asset('img/logo fire pixel.png') }}" width="190px" alt="logo">
+                        </a>
+                        <div class="collapse navbar-collapse">
+                            <ul class="navbar-nav ms-auto text-uppercase">
+                                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                                    <a class="nav-link text-light" href="{{ path( " app_default")
+                                        }}#skills">Compétences</a>
+                                </li>
+                                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                                    <a class="nav-link text-light" href="{{ path( " app_default")
+                                        }}#services">Services</a>
+                                </li>
+                                <li class="nav-item d-flex flex-column justify-content-center mx-3">
+                                    <a class="nav-link text-light" href="{{ path( " app_default")
+                                        }}#contact">Contact</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a href="{{ path( " app_default") }}#contact"
+                                        class="btn hero-button my-3 red-button shadow-lg"><i
+                                            class="fa-solid fa-lightbulb me-2"></i>Une idée de projet ?</a>
+                                </li>
+                            </ul>
+                        </div>
 
-          </div>
-        </nav>
-        <div class="container d-flex flex-column justify-content-center align-items-center h-100" id="main-content">
-            <h1 class="text-white text-center display-1">Page non trouvée</h1>
-            <p class="text-white text-center display-6 mt-4">
-                La page demandée est introuvable. Vérifiez toute erreur d'orthographe d'URL ou revenez à la <a class="link-danger" href="{{ path('app_default') }}">page d'accueil.</a>
-            </p>
+                    </div>
+                </nav>
+                <div class="container d-flex flex-column justify-content-center align-items-center h-100"
+                    id="main-content">
+                    <h1 class="text-white text-center display-1">Page non trouvée</h1>
+                    <p class="text-white text-center display-6 mt-4">
+                        La page demandée est introuvable. Vérifiez toute erreur d'orthographe d'URL ou revenez à la <a
+                            class="link-danger" href="{{ path('app_default') }}">page d'accueil.</a>
+                    </p>
+                </div>
+            </div>
+            <div class="custom-shape-divider-bottom-1692800020">
+                <img src="{{ asset('img/city-night.svg') }}" alt="city-night-image" loading="lazy" />
+            </div>
+        </header>
+    </main>
+    <!-- Footer-->
+    <footer class="footer text-center position-relative bg-black" id="skills">
+        <div class="custom-shape-divider-top-1">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none" loading="lazy">
+                <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+            </svg>
         </div>
-      </div>
-      <div class="custom-shape-divider-bottom-1692800020">
-        <img src="{{ asset('img/city-night.svg') }}" alt="city-night-image" loading="lazy" />
-      </div>
-    </header>
-  </main>
-  <!-- Footer-->
-  <footer class="footer text-center position-relative bg-black" id="skills">
-    <div class="custom-shape-divider-top-1">
-      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none"
-        loading="lazy">
-        <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-      </svg>
-    </div>
-    <div class="container py-5 px-3">
-      <div class="row text-white">
-        <!-- Footer Location-->
-        <div class="col-lg-4 mb-5 mb-lg-0 py-3">
-          <h4 class="text-uppercase mb-4 text-shadow-dark">PLAN DU SITE</h4>
-          <ul class="lead mb-0 list-unstyled">
-            <li>
-              <a href="{{ path( "app_default", { "id": "skills"}) }}" class="text-white text-decoration-none">Compétences</a>
-            </li>
-            <li>
-              <a href="{{ path( "app_default", { "id": "services"}) }}" class="text-white text-decoration-none">Services</a>
-            </li>
-            <li>
-              <a href="{{ path( "app_default", { "id": "contact"}) }}" class="text-white text-decoration-none">Contact</a>
-            </li>
-          </ul>
+        <div class="container py-5 px-3">
+            <div class="row text-white">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0 py-3">
+                    <h4 class="text-uppercase mb-4 text-shadow-dark">PLAN DU SITE</h4>
+                    <ul class="lead mb-0 list-unstyled">
+                        <li>
+                          <a href="{{ path( "app_default") }}#skills" class="text-white text-decoration-none">Compétences</a>
+                        </li>
+                        <li>
+                          <a href="{{ path( "app_default") }}#services" class="text-white text-decoration-none">Services</a>
+                        </li>
+                        <li>
+                          <a href="{{ path( "app_default") }}#contact" class="text-white text-decoration-none">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0 py-3">
+                    <h4 class="text-uppercase mb-4 text-shadow-dark">Autour du web</h4>
+                    <a class="btn btn-outline-light btn-social rounded-circle mx-1"
+                        href="mailto:ifwebdev@hotmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/IfWebDev"
+                        target="_blank"><i class="fab fa-fw fa-facebook"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1"
+                        href="https://wa.me/+213542341497?text=urlencodedtext" target="_blank"><i
+                            class="fab fa-fw fa-whatsapp"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4 py-3">
+                    <h4 class="text-uppercase mb-4 text-shadow-dark">à propos</h4>
+                    <p class="mb0 lead">J'aide les artisans du bâtiment, PME et industriels à concevoir des designs
+                        percutants.
+                        Démarquez-vous
+                        en collaborant avec un professionnel indépendant passionné du design et du web.</p>
+                </div>
+            </div>
+            <div class="copyright py-4 text-center text-white">
+                <div class="container"><small>Copyright &copy; If-Web-Dev 2023</small></div>
+            </div>
         </div>
-        <!-- Footer Social Icons-->
-        <div class="col-lg-4 mb-5 mb-lg-0 py-3">
-          <h4 class="text-uppercase mb-4 text-shadow-dark">Autour du web</h4>
-          <a class="btn btn-outline-light btn-social rounded-circle mx-1" href="mailto:ifwebdev@hotmail.com"><i
-              class="fa-solid fa-envelope"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/IfWebDev" target="_blank"><i
-              class="fab fa-fw fa-facebook"></i></a>
-          <a class="btn btn-outline-light btn-social mx-1" href="https://wa.me/+213542341497?text=urlencodedtext"
-            target="_blank"><i class="fab fa-fw fa-whatsapp"></i></a>
-        </div>
-        <!-- Footer About Text-->
-        <div class="col-lg-4 py-3">
-          <h4 class="text-uppercase mb-4 text-shadow-dark">à propos</h4>
-          <p class="mb0 lead">J'aide les artisans du bâtiment, PME et industriels à concevoir des designs percutants.
-            Démarquez-vous
-            en collaborant avec un professionnel indépendant passionné du design et du web.</p>
-        </div>
-      </div>
-      <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright &copy; If-Web-Dev 2023</small></div>
-      </div>
-    </div>
-  </footer>
-  <!-- Copyright Section-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/a88ec3c01d.js" crossorigin="anonymous"></script>
-  <script src="{{ asset('js/mobileNav.js') }}"></script>
+    </footer>
+    <!-- Copyright Section-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a88ec3c01d.js" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/mobileNav.js') }}"></script>
 
 </body>
 

@@ -31,10 +31,10 @@
   <main class="position-relative">
     <div class="wrapper-mobile d-lg-none">
       <ul>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "skills"}) }}">Compétences</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "services"}) }}">Services</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "contact"}) }}">Contact</a></li>
-        <li><a class="mobile-menu-close" href="{{ path( "app_default", { "id": "contact"}) }}">Une idée de projet ?</a></li>
+        <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#skills" >Compétences</a></li>
+        <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#services">Services</a></li>
+        <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#contact">Contact</a></li>
+        <li><a class="mobile-menu-close" href="{{ path( 'app_default') }}#contact">Une idée de projet ?</a></li>
       </ul>
     </div>
     <button class="menu-btn d-lg-none">
@@ -51,16 +51,16 @@
             <div class="collapse navbar-collapse">
               <ul class="navbar-nav ms-auto text-uppercase">
                 <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" aria-current="page" href="{{ path( "app_default", { "id": "skills"}) }}">Compétences</a>
+                  <a class="nav-link text-light" aria-current="page" href="{{ path( 'app_default') }}#skills">Compétences</a>
                 </li>
                 <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" href="{{ path( "app_default", { "id": "services"}) }}">Services</a>
+                  <a class="nav-link text-light" href="{{ path( 'app_default') }}#services">Services</a>
                 </li>
                 <li class="nav-item d-flex flex-column justify-content-center mx-3">
-                  <a class="nav-link text-light" href="{{ path( "app_default", { "id": "contact"}) }}">Contact</a>
+                  <a class="nav-link text-light" href="{{ path( 'app_default') }}#contact">Contact</a>
                 </li>
                 <li class="nav-item mx-3">
-                  <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 red-button shadow-lg"><i
+                  <a href="{{ path( 'app_default') }}#contact" class="btn hero-button my-3 red-button shadow-lg"><i
                       class="fa-solid fa-lightbulb me-2"></i>Une idée de projet ?</a>
                 </li>
               </ul>
@@ -76,9 +76,9 @@
               </h1>
               <p class="text-star info">Créateur de visuels, site vitrine et d'e-commerce Wordpress</p>
               <div class="d-flex justify-content-center justify-content-lg-start ">
-                <a href="{{ path( "app_default", { "id": "services"}) }}" class="btn hero-button my-3 red-button shadow-lg"><i
+                <a href="{{ path( 'app_default') }}#services" class="btn hero-button my-3 red-button shadow-lg"><i
                     class="fa-solid fa-circle-info me-2"></i>EN SAVOIR PLUS</a>
-                <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 ms-2 ms-lg-3 light-button shadow-lg"><i
+                <a href="{{ path( 'app_default') }}#contact" class="btn hero-button my-3 ms-2 ms-lg-3 light-button shadow-lg"><i
                     class="fa-regular fa-envelope me-2"></i>ME CONTACTER ?</a>
               </div>
             </div>
@@ -168,7 +168,7 @@
         <div class="row justify-content-center py-4 services">
 
           <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
-            <a href="{{ path( "app_default", { "id": "contact"}) }}" class="text-decoration-none">
+            <a href="{{ path( 'app_default') }}#contact" class="text-decoration-none">
               <div class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black rounded card flex-fill shadow">
                 <h3 class="text-center m-3 text-white fw-600">Conception Logos et visuels personnalisés</h3>
                 <p class="text-star text-center text-white"> à partir de</p>
@@ -184,13 +184,13 @@
                   <li class="text-center"><i class="fas fa-check pe-2"></i> Travail sur mesure</li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                  <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                  <a href="{{ path( 'app_default') }}#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
-            <a href="{{ path( "app_default", { "id": "contact"}) }}" class="text-decoration-none">
+            <a href="{{ path( 'app_default') }}#contact" class="text-decoration-none">
               <div
                 class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black text-white rounded card flex-fill d-flex flex-column shadow">
                 <h3 class="text-center my-3 text-white fw-600">Site Vitrine Wordpress ou Symfony</h3>
@@ -206,13 +206,13 @@
                   <li class="text-center"><i class="fas fa-check pe-2"></i> Optimisation vitesse et performance</li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                  <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                  <a href="{{ path( 'app_default') }}#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
                 </div>
               </div>
             </a>
           </div>
           <div class="col-md-6 col-xl-4 fade-in d-flex justify-content-center">
-            <a href="{{ path( "app_default", { "id": "contact"}) }}" class="text-decoration-none">
+            <a href="{{ path( 'app_default') }}#contact" class="text-decoration-none">
               <div
                 class="p-4 m-3 m-md-2 m-lg-5 m-xl-3 bg-black text-white rounded card flex-fill d-flex flex-column shadow">
                 <h3 class="text-center my-3 text-white fw-600">Création Site e-commerce Wordpress</h3>
@@ -229,7 +229,7 @@
                   <li class="text-center"><i class="fas fa-check pe-2"></i> Boutique Woocommerce</li>
                 </ul>
                 <div class="d-flex justify-content-center">
-                  <a href="{{ path( "app_default", { "id": "contact"}) }}" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
+                  <a href="{{ path( 'app_default') }}#contact" class="btn hero-button my-3 red-button shadow-lg">un devis ?</a>
                 </div>
               </div>
             </a>
@@ -302,13 +302,13 @@
           <h4 class="text-uppercase mb-4 text-shadow-dark">PLAN DU SITE</h4>
           <ul class="lead mb-0 list-unstyled">
             <li>
-              <a href="{{ path( "app_default", { "id": "skills"}) }}" class="text-white text-decoration-none">Compétences</a>
+              <a href="{{ path( 'app_default') }}#skills" class="text-white text-decoration-none">Compétences</a>
             </li>
             <li>
-              <a href="{{ path( "app_default", { "id": "services"}) }}" class="text-white text-decoration-none">Services</a>
+              <a href="{{ path( 'app_default') }}#services" class="text-white text-decoration-none">Services</a>
             </li>
             <li>
-              <a href="{{ path( "app_default", { "id": "contact"}) }}" class="text-white text-decoration-none">Contact</a>
+              <a href="{{ path( 'app_default') }}#contact" class="text-white text-decoration-none">Contact</a>
             </li>
           </ul>
         </div>
