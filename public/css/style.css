@@ -14,6 +14,7 @@
 
 :root {
   --main-color: #00cfe8;
+  --bs-white-gb: whitesmoke;
   --second-color: #1b1b1b;
   --third-color: #d4d4d4;
   --bg-color: #ebebeb;
@@ -150,7 +151,7 @@ a.nav-link:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: whitesmoke;
   clip-path: circle(25px at calc(100% - 45px) 40px);
   transform: translateZ(0);
   /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
@@ -181,7 +182,7 @@ a.nav-link:hover {
   border-radius: 50%;
   font-size: 30px;
   border: transparent;
-  color: white;
+  color: whitesmoke;
   cursor: pointer;
   background-color: transparent;
   /*background: linear-gradient(-135deg, #c850c0, #4158d0);*/
@@ -191,7 +192,7 @@ a.nav-link:hover {
 
 .menu-btn.appear {
   position: fixed;
-  background: #fff;
+  background: whitesmoke;
   color: #4158d0;
 }
 
@@ -298,30 +299,30 @@ a.nav-link:hover {
 
 .red-button {
   background-color: #c91414;
-  border: 3px solid white;
-  box-shadow: 0 0.375em 0 white;
-  color: white;
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0.375em 0 whitesmoke;
+  color: whitesmoke;
   transition: ease-in-out 0.3s;
 }
 
 .light-button {
   background-color: transparent;
-  border: 3px solid white;
-  box-shadow: 0 0.375em 0 white;
-  color: white;
+  border: 3px solid whitesmoke;
+  box-shadow: 0 0.375em 0 whitesmoke;
+  color: whitesmoke;
   transition: ease-in-out 0.3s;
 }
 
 .red-button:hover {
   background-color: #558ABB;
-  border: 3px solid white;
-  color: white;
+  border: 3px solid whitesmoke;
+  color: whitesmoke;
   cursor: pointer;
 }
 
 .light-button:hover {
   background-color: #c91414;
-  border: 3px solid white;
+  border: 3px solid whitesmoke;
   cursor: pointer;
 }
 
@@ -371,10 +372,10 @@ a.nav-link:hover {
 
 .divider-separator {
   width: 46px;
-  color: white;
+  color: whitesmoke;
   border-radius: 5px;
   display: block;
-  border: 3px solid white;
+  border: 3px solid whitesmoke;
 }
 
 /*---- competence ----*/
@@ -398,7 +399,7 @@ h2 {
 
 .skills h4 {
   font-size: 35px;
-  color: white;
+  color: whitesmoke;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -420,7 +421,7 @@ h2 {
 .skills .card {
   text-align: center;
   max-width: 280px;
-  box-shadow: 0px -5px white;
+  box-shadow: 0px -5px whitesmoke;
   border-top: 3px solid transparent;
   border-right: 3px solid transparent;
   border-bottom: 3px solid transparent;
@@ -456,7 +457,7 @@ h2 {
   transform: rotate(0deg);
   left: calc(50% - 40px);
   transition: 1s;
-  border: 3px solid white;
+  border: 3px solid whitesmoke;
   border-radius: 10px;
 }
 
@@ -472,13 +473,13 @@ h2 {
   transform: rotate(0deg);
   left: calc(50% - 40px);
   transition: 1s;
-  border: 3px solid white;
+  border: 3px solid whitesmoke;
   border-radius: 10px;
 }
 
 .skills .card:hover {
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px solid whitesmoke;
 }
 
 .skills .card:hover i,
@@ -489,7 +490,7 @@ h2 {
 
 .skills .card:hover h4,
 .skills .card:hover p {
-  color: white;
+  color: whitesmoke;
   transition: 1s;
 }
 
@@ -577,7 +578,7 @@ section .services {
 
 .services .card {
   flex: 1;
-  box-shadow: 0px -5px white !important;
+  box-shadow: 0px -5px whitesmoke !important;
   width: 100%;
   border: 3px solid black;
   transition: ease-in-out 0.3s;
