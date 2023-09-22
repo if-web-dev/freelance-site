@@ -263,6 +263,17 @@ a.nav-link:hover {
   font-size: 80px;
 }
 
+.mobile-banner {
+  position: absolute; /* Position absolue sur l'élément enfant */
+  top: 50%; /* Centrer verticalement à 50% du conteneur parent */
+  left: 50%; /* Centrer horizontalement à 50% du conteneur parent */
+  transform: translate(-50%, -50%); /* Décalage de -50% pour centrer correctement */
+  z-index: -1!important;
+  /*background-color: white;*/
+  padding: 10px;
+}
+
+
 .hero h1 .highlighted {
   color: #c91414;
   text-shadow: none;
@@ -537,6 +548,7 @@ h2 {
 }
 
 .flex-fill {
+  flex: 1!important;
   border-radius: 0 0 10px 10px !important;
 }
 
@@ -761,6 +773,10 @@ footer h4 {
 @media screen and (min-width: 992px) {
   .container-grid {
     width: 970px;
+  }
+
+  .mobile-banner {
+    display: none!important;
   }
 
   .hero h1 {
