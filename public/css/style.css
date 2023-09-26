@@ -593,16 +593,28 @@ section .services {
   flex: 1;
   box-shadow: 0px -5px whitesmoke!important;
   width: 100%;
-  border: 3px solid black;
+  border: 3px solid transparent;
   transition: ease-in-out 0.3s;
+}
+
+.services .card:hover {
+  border: 3px solid whitesmoke;
 }
 
 #services .head-2 {
   box-shadow: 0px -5px var(--main-color)!important;
 }
 
+#services .head-2:hover {
+  border: 3px solid var(--main-color);
+}
+
 #services .head-3 {
   box-shadow: 0px -5px var(--violet)!important;
+}
+
+#services .head-3:hover {
+  border: 3px solid var(--violet);
 }
 
 .services .card div {
@@ -652,6 +664,10 @@ footer h4 {
   font-size: 1.25rem;
   justify-content: center;
   align-items: center;
+}
+
+.grecaptcha-badge { 
+  visibility : hidden ; 
 }
 
 /*------ error page ------*/
